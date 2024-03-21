@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoga website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-family: cursive;
+        }
+        
+        .link {
+            text-decoration: none;
+            font-family: inherit;
+            color: inherit;
+        }
+        
+        .main-header {
+            background: url("img/Screenshot\ 2023-01-05\ 163356.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            padding-top: 10px;
+        }
+        
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 30px;
+            transform: translateY(-50%);
+        }
+        
+        .header-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+        }
+        
+        .nav-list {
+            list-style-type: none;
+            display: flex;
+        }
+        
+        .logo {
+            font-weight: bolder;
+            color: #19d7dd;
+            font-size: 35px;
+            text-decoration: none;
+        }
+        
+        .nav-link {
+            font-size: 18px;
+            color: #fff;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transition: color .3s;
+        }
+        
+        .nav-link:hover {
+            color: rgb(206, 102, 33);
+        }
+        
+        .nav-item {
+            margin-left: 50px;
+        }
+        
+        .main-heading {
+            font-weight: normal;
+            color: yellow;
+            font-size: 65px;
+        }
+        
+        .main-heading-focus {
+            color: yellow;
+            font-weight: bold;
+        }
+        
+        .sub-heading {
+            text-align: right;
+            color: black;
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        
+        .main-container {
+            margin-top: 30px;
+        }
+        
+        .main-card-title {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .card-content {
+            width: 1560px;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        
+        .card-img-container {
+            width: 500px;
+            height: 100%;
+            background: black;
+            border-radius: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card-img {
+            height: 90%;
+            transition: 0.5s ease-out;
+        }
+        
+        .card-title {
+            margin-top: 30px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: #333;
+        }
+        
+        .card-span {
+            font-weight: normal;
+            display: block;
+        }
+        
+        .card-info {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: -100%;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            transition: 0.5s ease-out;
+        }
+        
+        .card-info-list {
+            margin: auto;
+        }
+        
+        .card-info-item {
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .card-img-container:hover>.card-info {
+            top: 0;
+        }
+        
+        .card-img-container:hover>.card-img {
+            transform: scale(1.5);
+        }
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-nav">
+            <a href="#" class="logo">YOGA</a>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link">CLASS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link">CONTRACT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link link">ABOUT US</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero-content">
+            <h1 class="main-heading">"Yoga is the journey <span class="main-heading-focus">of <br> The Self, <br> To The
+                    Self, <br> Through The Self”</span> </h1>
+            <p class="sub-heading">Bhagavad Gita</p>
+
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="card-container">
+            <p class="main-card-title">LIST OF POSE</p>
+            <div class="card-content">
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="img/download (1).png" alt="" class="card-img">
+                        <div class="card-info">
+                            <ul class="card-info-list">
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="card-title">NATRAJASANA <span class="card-span">(3 MINS)</span></p>
+                </div>
+
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="img/download.png" alt="" class="card-img">
+                        <div class="card-info">
+                            <ul class="card-info-list">
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="card-title">DHANURASANA <span class="card-span">(3 MINS)</span></p>
+                </div>
+                <div class="card">
+                    <div class="card-img-container">
+                        <img src="img/mediation.jpg" alt="" class="card-img">
+                        <div class="card-info">
+                            <ul class="card-info-list">
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                                <li class="card-info-item">Lorem, ipsum dolor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="card-title">MEDIATION POSE <span class="card-span">( 5 MINS)</span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
